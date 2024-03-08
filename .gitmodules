@@ -1,9 +1,3 @@
-[submodule "src/main/java/org/texastorque/pytorquelib"]
-	path = src/main/java/org/texastorque/pytorquelib
-	url = https://github.com/TexasTorque/PyTorqueLib
-[submodule "pytorquelib"]
-	path = pytorquelib
-	url = https://github.com/TexasTorque/PyTorqueLib
 [submodule "lib"]
 	path = lib
 	url = https://github.com/TexasTorque/PyTorqueLib

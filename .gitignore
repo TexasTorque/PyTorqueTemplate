@@ -1,1 +1,5 @@
-__pycache__
+__pycache__/
+networktables.json
+simgui-ds.json
+simgui-window.json
+simgui.json

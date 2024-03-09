@@ -4,11 +4,9 @@ from lib.subsystem.TorqueSubsystem import Subsystem
 
 subsystems: list[Subsystem] = []
 
-# Define subsystems here
-empty = Empty()
-subsystems.append(empty)
-input = Input()
-subsystems.append(input)
+# Add subsystems here
+subsystems.append(Empty())
+subsystems.append(Input())
 
 for subsystem in subsystems:
     subsystem.set_subsystems(subsystems)

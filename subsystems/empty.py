@@ -1,4 +1,4 @@
-from lib.subsystem import Subsystem
+from lib.subsystem.TorqueSubsystem import Subsystem
 
 class Empty(Subsystem):
     def __init__(self) -> None:

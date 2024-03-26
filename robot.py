@@ -2,4 +2,6 @@ from lib.robot.TorqueRobot import TorqueRobotBase
 import systems
 
 class Robot(TorqueRobotBase):
-    pass
+    def __init__(self) -> None:
+        self.add_subsystem(systems.inputsystem)
+        self.add_subsystem(systems.emptysystem)

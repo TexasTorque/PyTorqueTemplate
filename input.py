@@ -1,15 +1,19 @@
-import wpilib
 from lib.subsystem.TorqueSubsystem import Subsystem
-from ports import Ports
+import wpilib
+import systems
 
 class Input(Subsystem):
-    def __init__(self) -> None:
-        super().__init__("Input")
+    def initialize(self) -> None:
         self.driver: wpilib.XboxController = wpilib.XboxController(0)
         self.operator: wpilib.XboxController = wpilib.XboxController(1)
-    
-    def initialize(self) -> None:
-        pass
 
     def update(self) -> None:
-        pass
+        systems
+
+_instance = None
+
+def get_instance() -> Input:
+    global _instance
+    if _instance == None:
+        _instance = Input()
+    return _instance

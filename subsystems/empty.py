@@ -1,11 +1,11 @@
 from lib.subsystem.TorqueSubsystem import TorqueSubsystem
-import systems
+from lib.base.TorqueMode import TorqueMode
 
 class Empty(TorqueSubsystem):
-    def initialize(self, mode) -> None:
+    def initialize(self, mode: TorqueMode) -> None:
         pass
 
-    def update(self, mode) -> None:
+    def update(self, mode: TorqueMode) -> None:
         pass
 
 _instance = None

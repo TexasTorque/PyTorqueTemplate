@@ -10,7 +10,7 @@ class Empty(TorqueSubsystem):
 
 _instance = None
 
-def get_instance() -> Empty:
+def get_empty() -> Empty:
     global _instance
     if _instance == None:
         _instance = Empty()

@@ -1,14 +1,15 @@
-from lib.subsystem.TorqueSubsystem import Subsystem
+from lib.subsystem.TorqueSubsystem import TorqueSubsystem
+from lib.base.TorqueMode import TorqueMode
 import wpilib
 import systems
 
-class Input(Subsystem):
-    def initialize(self) -> None:
+class Input(TorqueSubsystem):
+    def initialize(self, mode: TorqueMode) -> None:
         self.driver: wpilib.XboxController = wpilib.XboxController(0)
         self.operator: wpilib.XboxController = wpilib.XboxController(1)
 
-    def update(self) -> None:
-        systems
+    def update(self, mode: TorqueMode) -> None:
+        pass
 
 _instance = None
 

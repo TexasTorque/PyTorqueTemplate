@@ -1,3 +1,6 @@
 [submodule "lib"]
 	path = lib
 	url = https://github.com/TexasTorque/PyTorqueLib
+[submodule "toast"]
+	path = toast
+	url = https://www.github.com/TexasTorque/PyTOAST

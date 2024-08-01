@@ -8,6 +8,9 @@ class Empty(TorqueSubsystem):
     def update(self, mode: TorqueMode) -> None:
         pass
 
+    def clean(self, mode: TorqueMode) -> None:
+        pass
+
 _instance = None
 
 def get_empty() -> Empty:

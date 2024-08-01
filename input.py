@@ -1,7 +1,6 @@
 from lib.subsystem.TorqueSubsystem import TorqueSubsystem
 from lib.base.TorqueMode import TorqueMode
 import wpilib
-import systems
 
 class Input(TorqueSubsystem):
     def initialize(self, mode: TorqueMode) -> None:
@@ -11,9 +10,12 @@ class Input(TorqueSubsystem):
     def update(self, mode: TorqueMode) -> None:
         pass
 
+    def clean(self, mode: TorqueMode) -> None:
+        pass
+
 _instance = None
 
-def get_instance() -> Input:
+def get_input() -> Input:
     global _instance
     if _instance == None:
         _instance = Input()

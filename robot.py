@@ -4,6 +4,8 @@ import input
 
 class Robot(TorqueRobotBase):
     def __init__(self) -> None:
-        super().__init__(input.get_instance())
+        super().__init__()
+
+        self.set_input(input.get_input())
         
         self.add_subsystem(systems.empty)
